@@ -126,7 +126,6 @@ strategy.py
 ```text
 dynamic-pricing-thompson-sampling/
 │
-├── data/
 ├── strategy.py
 ├── report/
 │   └── final-report.pdf
