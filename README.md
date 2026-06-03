@@ -79,6 +79,18 @@ Pricing decisions are generated using Thompson Sampling:
 
 This naturally balances exploration and exploitation as uncertainty decreases over time.
 
+## Data
+
+The pricing strategy operates in a simulated competitive environment.
+
+Historical prices and demand observations are generated sequentially during the simulation and are not part of a fixed static dataset. At each period, the strategy observes:
+
+- Its own realized demand
+- Competitor prices
+- Historical observations from previous rounds
+
+The generated history is used to train the Bayesian demand model and update pricing decisions over time.
+
 ---
 
 ## Implementation Highlights
